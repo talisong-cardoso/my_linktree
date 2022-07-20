@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #EDF2FF;
+    --text-color: #00082F;
+    --primary-color: #4263EB;
+    --primary-color-dark: #364FC7;
+    --text-small: 12px;
+    --text-base: 14px;
+    --text-medium: 18px;
+    --text-large: 32px;
+    --font-sans: "Roboto", sans-serif;
+    --font-mono: "Roboto Mono", monospace;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-sans);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: min(100%, 300px);
+    text-align: center;
+    margin-inline: auto;
+    padding-block: 1.5rem;
+}
+
+.header {
+    margin-bottom: 3rem;
+}
+
+.header__wrapper-img {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 1.5rem;
+}
+
+.header__wrapper-img img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.header__username {
+    font-size: var(--text-large);
+    margin-bottom: .5rem;
+}
+
+.header__nickname {
+    font-size: var(--text-medium);
+    font-family: var(--font-mono);
+}
+
+.main {
+    margin-bottom: 3rem;
+}
+
+.main__content {
+    list-style: none;
+    width: min(100%, 300px);
+}
+
+.main__link {
+    align-items: center;
+    color: var(var);
+    border-radius: 6px;
+    display: flex;
+    gap: 6px;
+    font-size: var(--text-base);
+    margin-bottom: 1rem;
+    text-decoration: none;
+    background: var(--primary-color);
+    width: min(100%, 300px);
+    justify-content: center;
+    /* padding-inline: 100px; */
+    padding-block: 1rem;
+    transition: 150ms ease-in-out background;
+    
+}
+
+
+.main__link:hover {
+    background: var(--primary-color-dark);
+}
+
+.main__link-img {
+    width: 22px;
+    object-fit: cover;
+}
+
+.rounded {
+    border-radius: 4px;
+}
+
+.main__link-text {
+    color: #FFFFFF;
+}
+
+.footer__text {
+    font-size: var(--text-small);
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.footer__text a {
+    /* font-weight: normal; */
+    color: var(--text-color);
+}
